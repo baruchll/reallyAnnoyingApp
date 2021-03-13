@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Phone"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Phones" />
+
+    <item
+        android:id="@+id/contact_us"
+        android:icon="@android:drawable/sym_call_outgoing"
+        android:title="Contact Us" />
+
+    <item
+        android:id="@+id/Exit"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="To Exit" />
+</menu>

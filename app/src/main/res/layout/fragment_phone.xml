@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_a"
+    tools:context=".navigation_bar.Phone">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/apple_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/apple_logo" />
+
+                <ImageButton
+                    android:id="@+id/huawei_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/huawei_logo" />
+
+                <ImageButton
+                    android:id="@+id/lg_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/lg_logo" />
+
+                <ImageButton
+                    android:id="@+id/samsung_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/samsung_logo" />
+
+                <ImageButton
+                    android:id="@+id/xiaomi_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/xiaomi_logo" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/galaxy_s21"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/galaxy_s21"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/s21_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:        Galaxy S21\nPrice:       5,189 NIS\nDiscription: The lineup comprises three devices, with the Galaxy S21 being the least expensive with a smaller screen size. In contrast to the Galaxy S20+, the Galaxy S21+ is very similar to the S21 spec-wise, with the exception of a larger display, higher battery capacity, and back glass instead of plastic. The Galaxy S21 Ultra has an even larger screen size, battery, and a host of other improvements over the other models, including a more advanced camera setup highlighted by its 108 MP main sensor with laser autofocus and a higher resolution 1440p display. The S21 Ultra is also the first phone in the Galaxy S series to support the S Pen, albeit sold separately and with limited functionality."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/galaxy_s20"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/galaxy_s20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/s20_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Name:     Galaxy S20 \nPrice:        4,099 NIS\nDiscription:      The title of the phone was originally presumed to be the Galaxy S11, due to it being the logical extension from the predecessor. However, successive leaks in January 2020 revealed the title of the phone to be the Galaxy S20, because of the multiples of 10, rather than 1. In addition, details regarding the phone were leaked widely before the release, to the extent that almost all details regarding the specifications and design of the phone were known before the release. Leaker Max Weinbach obtained the actual phone a month before the release, confirming everything the community already guessed. Commentators remarked that by February, 'most everything the company is planning to introduce has already leaked out.' In addition to charts on the phone's specifications, marketing material and images of the phones themselves in real-life were leaked."
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/galaxy_s10"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/galaxy_s10"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/s10_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Name:     Galaxy S10 \nPrice:        2,599 NIS\nDiscription:       This smartphone sits right between the other two devices and has a 6.1-inch display. This display has QHD+ resolution but you can change the resolution of the display panel. It also has an ultrasonic in-display fingerprint scanner which is super quick to unlock the smartphone. "
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/galaxy_s9"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/galaxy_s9"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/s9_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Name:     Galaxy S9\nPrice:      1800\nDiscription:   The good The Galaxy S9 once again proves Samsung's formula of a gorgeous 5.8-inch screen, sexy dual-curved design and terrific camera for well-lit shots can't go wrong. Whiplash-fast speeds, wireless charging and water resistance complete the package. And it looks stunning in purple and blue."
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/mate_40"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/huawei_mate40"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mate40_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     Huawei Mate 40\nPrice:      4,360 NIS\nDiscription:        Huawei Mate 40 smartphone runs on Android v10 (Q) operating system. The phone is powered by Octa core (2.86 GHz, Dual core, Cortex A76 + 2.36 GHz, Dual core, Cortex A76 + , Cortex A55) processor. It runs on the HiSilicon Kirin 990 5G Chipset. It has 8 GB RAM and 128 GB internal storage."
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/mate_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/huawei_mate30"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mate30_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     Huawei Mate 30\nPrice:      3,000 NIS\nDiscription:        Huawei Mate 30 smartphone was launched on 19th September 2019. The phone comes with a 6.62-inch touchscreen display with a resolution of 1080x2340 pixels and an aspect ratio of 19.5:9. Huawei Mate 30 is powered by a 1.86GHz octa-core HiSilicon Kirin 990 processor. It comes with 6GB of RAM."
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/mate_20x"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/huawei_mate20x"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mate20x_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     Huawei Mate 20 X\nPrice:      1859 NIS\nDiscription:        Huawei Mate 20 X is powered by an octa-core HiSilicon Kirin 980 processor that features 2 cores clocked at 2.6GHz, 2 cores clocked at 1.92GHz and 4 cores clocked at 1.8GHz. It comes with 6GB of RAM. The Huawei Mate 20 X runs Android 9.0 and is powered by a 5000mAh non-removable battery."
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/mate_x2"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/huawei_matex2"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mate_x2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     Huawei Mate X2\nPrice:      8,788 NIS\nDiscription:        Huawei Mate X2 is powered by an octa-core HiSilicon Kirin 9000 processor. It comes with 8GB of RAM. The Huawei Mate X2 runs Android 10 and is powered by a 4500mAh battery. ... The Huawei Mate X2 runs EMUI 10.1 is based on Android 10 and packs 256GB of inbuilt storage (up to 256GB)."
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/iphone_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/iphone_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/iphone_12_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:        Iphone 12\nPrice: 4,499 NIS\nDescription:        The iPhone 12 and iPhone 12 mini are Apple's mainstream flagship iPhones for 2020. The phones come in 6.1-inch and 5.4-inch sizes with identical features, including support for faster 5G cellular networks, OLED displays, improved cameras, and Apple's latest A14 chip, all in a completely refreshed design."
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/iphone_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/iphone_11"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/iphone_11_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:         Iphone 11\nPrice:      2,789 NIS\nDescription:        The improved array allows for improved zoom function and a 120-degree field of view, putting its photographic capabilities on par with the best Android devices that previously included such capability. The 11 ditches the telephoto lens but still features the landscape selfie feature the improved field of view delivers."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/iphone_x"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/iphone_x"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/iphone_x_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:        Iphone X\nPrice:      2,399 NIS\nDescription:        The iPhone X was Apple's flagship 10th anniversary iPhone featuring a 5.8-inch OLED display, facial recognition and 3D camera functionality, a glass body, and an A11 Bionic processor. Launched November 3, 2017, discontinued with the launch of the iPhone XR, XS, and XS Max."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/iphone_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/iphone_8"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/iphone_8_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:         Iphone 8\nPrice:         1,248 NIS\nDescription:        The iPhone 8 features a more advanced 12-megapixel wide-angle f/1.8 camera with a larger, faster sensor that lets in 83 percent more light. Other features include a new color filter and deeper pixels for better color saturation, a wider dynamic range of color, and lower noise in photos and videos."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/lg_wing"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/lg_wing"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/wing_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:         LG Wing\nPrice:      3,059 NIS\nDescription:        LG Wing smartphone was launched on 14th September 2020. The phone comes with a 6.80-inch touchscreen primary display with a resolution of 1080x2460 pixels at a pixel density of 395 pixels per inch (ppi) and an aspect ratio of 20.5:9."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/lg_v60"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/lg_v60"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/v60_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     LG V60\nPrice:      3,300 NIS\nDescription:        LG V60 ThinQ 5G smartphone was launched in February 2019. The phone comes with a 6.80-inch touchscreen primary display with a resolution of 1080x2460 pixels at a pixel density of 395 pixels per inch (ppi). ... LG V60 ThinQ 5G is powered by an octa-core Qualcomm Snapdragon 865 processor."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/lg_velvet"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/lg_velvet"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/velvet_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     LG Velvet\nPrice:      2,400 NIS\nDescription:        The LG Velvet is the spiritual successor of the LG G8X ThinQ. It sports a big 6.8-inch display with a 20.5:9 aspect ratio. ... The LG Velvet has a triple camera setup at the back consisting of a 48-megapixel primary camera, an 8-megapixel ultra-wide-angle camera, and a 5-megapixel depth sensor."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/lg_k92"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/lg_k92"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/k92_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     LG K92\nPrice:      1,355 NIS\nDiscription:        The phone comes with a 6.70-inch display. LG K92 5G comes with 6GB of RAM. The LG K92 5G runs Android 10 and is powered by a 4000mAh battery. ... Connectivity options on the LG K92 5G include Wi-Fi 802.11 a/b/g/n/ac, Bluetooth v5."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/poco_x3"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/poco_x3"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/x3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     Xiaomi Poco X3\nPrice:      852 NIS\nDiscription:        The POCO X3 and POCO X3 NFC are Android-based smartphones developed by Xiaomi, announced on 7 and 22 September 2020. The phone has a FHD+ IPS LCD 6.67 display, a 64 MP wide, 13 MP ultra-wide, 2 MP macro, and 2 MP depth camera, a 5160 mAh battery, and a side-mounted fingerprint sensor."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/poco_m3"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/poco_m3"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/m3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     Xiaomi Poco M3\nPrice:      552 NIS\nDiscription:        Xiaomi Poco M3 is officially announced on November 24, 2020. The dimension of the smartphone is 162.3 x 77.3 x 9.6 mm. The device is pack with 4 GB RAM along with 64 GB and 128 GB internal storage options. The smartphone is powered by the Qualcomm SM6115 Snapdragon 662 Octa-core processor while the GPU is Adreno 610."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/mi_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/mi_11"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mi_11_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:         Xiaomi MI 11 \nPrice:      2,366 NIS \nDiscription:        Xiaomi Mi 11 is powered by an octa-core Qualcomm Snapdragon 888 processor. It comes with 8GB of RAM. ... The Xiaomi Mi 11 runs MIUI 12 is based on Android 11 and packs 128GB of inbuilt storage. The Xiaomi Mi 11 is a dual-SIM (GSM and GSM) smartphone that accepts Nano-SIM and Nano-SIM cards."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/mi_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:src="@drawable/mi_10"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mi_10_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name:     Xiaomi MI 10 \nPrice:      2,160 NIS \nDiscription:        The phone comes with a 6.67-inch touchscreen display with a resolution of 1080x2340 pixels. Xiaomi Mi 10 Pro is powered by a 2.84GHz octa-core Qualcomm Snapdragon 865 processor. It comes with 12GB of RAM. The Xiaomi Mi 10 Pro runs Android 10 and is powered by a 4500mAh non-removable battery."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
